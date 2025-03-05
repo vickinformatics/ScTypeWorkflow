@@ -11,3 +11,6 @@ The list of tissues and corresponding gene sets can be found here: https://raw.g
 - **resolution**: The cluster resolution to use for assigning annotations (default is "seurat_clusters").
 - **export**: If TRUE, exports the resulting cell type scores to a CSV file.
 - **export_path**: Specifies the path for saving the exported CSV file (if export = TRUE).
+
+## Citations
+- Ianevski A, Giri AK, Aittokallio T (2022). "Fully-automated and ultra-fast cell-type identification using specific marker combinations from single-cell transcriptomic data." _Nature Communications_, **13**, 1246. https://doi.org/10.1038/s41467-022-28803-w.
