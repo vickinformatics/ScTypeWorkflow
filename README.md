@@ -12,5 +12,9 @@ The gene sets for various tissues can be found here: https://raw.githubuserconte
 - `export`: If TRUE, exports the resulting cell type scores to a CSV file (default is FALSE).
 - `export_path`: Specifies the path for saving the exported CSV file (if export = TRUE).
 
-## Citations
+## Updates
+<ins>September 10<sup>rd</sup>, 2025</ins>
+- Added functionality to automatically create the directory specified in `export_path` if it does not exist before exporting the CSV file.
+
+## References
 - Ianevski A, Giri AK, Aittokallio T (2022). "Fully-automated and ultra-fast cell-type identification using specific marker combinations from single-cell transcriptomic data." _Nature Communications_, **13**, 1246. https://doi.org/10.1038/s41467-022-28803-w.
