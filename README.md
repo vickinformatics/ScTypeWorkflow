@@ -1,7 +1,8 @@
-# ScTypeWorkflow
+# Run_ScType()
+- ⚠️ `ScTypeWorkflow()` is now deprecated and has been replaced by `Run_ScType()`.
 
 ## Description
-The `ScTypeWorkflow` function automates cell type annotation for single-cell RNA sequencing (scRNA-seq) data using the ScType workflow (https://sctype.app/). The function takes in a Seurat object and returns cell type annotations for each cluster in the dataset. It also provides an option to export the resulting cell type scores to a CSV file. 
+The `Run_ScType()` function automates cell type annotation for single-cell RNA sequencing (scRNA-seq) data using the ScType workflow (https://sctype.app/). The function takes in a Seurat object and returns cell type annotations for each cluster in the dataset. It also provides an option to export the resulting cell type scores to a CSV file. 
 
 The gene sets for various tissues can be found here: https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/ScTypeDB_full.xlsx
 
@@ -13,6 +14,9 @@ The gene sets for various tissues can be found here: https://raw.githubuserconte
 - `export_path`: Specifies the path for saving the exported CSV file (if export = TRUE).
 
 ## Updates
+<ins>November 7<sup>rd</sup>, 2025</ins>
+- Renamed `ScTypeWorkflow()` to `Run_ScType()` for clarity. `ScTypeWorkflow()` is now deprecated and no longer maintained.
+
 <ins>September 10<sup>rd</sup>, 2025</ins>
 - Added functionality to automatically create the directory specified in `export_path` if it does not exist before exporting the CSV file.
 
