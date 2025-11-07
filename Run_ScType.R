@@ -1,6 +1,6 @@
-#' ScTypeWorkflow
+#' Run_ScType
 #'
-#' The `ScTypeWorkflow` function automates cell type annotation for single-cell RNA sequencing (scRNA-seq) data using the ScType workflow (https://sctype.app/).
+#' The `Run_ScType()` function automates cell type annotation for single-cell RNA sequencing (scRNA-seq) data using the ScType workflow (https://sctype.app/).
 #' The function takes in a Seurat object and returns cell type annotations for each cluster in the dataset.
 #' It also provides an option to export the resulting cell type scores to a CSV file. 
 #' The gene sets for various tissues can be found here: https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/ScTypeDB_full.xlsx
@@ -17,7 +17,7 @@
 #' Ianevski A, Giri AK, Aittokallio T (2022). "Fully-automated and ultra-fast cell-type identification using specific marker combinations from single-cell transcriptomic data." *Nature Communications*, 13, 1246. https://doi.org/10.1038/s41467-022-28803-w.
 #' 
 #' @author Vicki Do
-#' @lastUpdated 2025-9-10
+#' @lastUpdated 2025-11-7
 #'
 #' @examples
 #' sctype_scores <- ScTypeWorkflow(seurat = seurat_obj, tissue = "Kidney", resolution = "RNA_snn_res.0.5", export = TRUE, export_path = "tables/Kidney_scType_scores.csv")
