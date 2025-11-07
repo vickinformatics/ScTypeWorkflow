@@ -7,7 +7,7 @@ The `Run_ScType()` function automates cell type annotation for single-cell RNA s
 The gene sets for various tissues can be found here: https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/ScTypeDB_full.xlsx
 
 ## Arguments
-- `seurat`: The Seurat object containing your single-cell RNA sequencing data.
+- `seurat`: A Seurat object containing the single-cell RNA sequencing data.
 - `tissue`: The tissue type for which to generate gene sets. Available tissue types include Immune system, Pancreas, Liver, Eye, Kidney, Brain, Lung, Adrenal, Heart, Intestine, Muscle, Placenta, Spleen, Stomach, and Thymus (default is "Immune system").
 - `resolution`: The cluster resolution to use for assigning annotations (default is "seurat_clusters").
 - `export`: If TRUE, exports the resulting cell type scores to a CSV file (default is FALSE).
