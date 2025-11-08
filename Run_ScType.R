@@ -20,13 +20,13 @@
 #' @lastUpdated 2025-11-7
 #'
 #' @examples
-#' sctype_scores <- ScTypeWorkflow(seurat = seurat_obj, tissue = "Kidney", resolution = "RNA_snn_res.0.5", export = TRUE, export_path = "tables/Kidney_scType_scores.csv")
+#' sctype_scores <- Run_ScType(seurat = seurat_obj, tissue = "Kidney", resolution = "RNA_snn_res.0.5", export = TRUE, export_path = "tables/Kidney_scType_scores.csv")
 
-ScTypeWorkflow <- function(seurat,
-                           tissue = "Immune system",
-                           resolution = "seurat_clusters",
-                           export = FALSE,
-                           export_path = "sctype_scores.csv") {
+Run_ScType() <- function(seurat,
+                         tissue = "Immune system",
+                         resolution = "seurat_clusters",
+                         export = FALSE,
+                         export_path = "sctype_scores.csv") {
   
   # Load gene set preparation and cell type annotation functions
   source("https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/gene_sets_prepare.R")
